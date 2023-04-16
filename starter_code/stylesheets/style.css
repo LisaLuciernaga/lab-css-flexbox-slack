@@ -24,14 +24,12 @@ body {
 nav {
     width: 100%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
     background-color: #540B51;
 }
 
 #slack-logo {
     width: 30%;
-    margin: 0;
     padding: 10px
 }
 
@@ -45,7 +43,6 @@ nav button {
 
 header {
     background-color: #540B51;
-    width: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -292,12 +289,12 @@ footer img {
 
 footer ul {
     list-style: none;
-    margin: 5px;
 }
 
 .page-links {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     border-bottom: lightgray solid;
     color: #454245;
 }
@@ -337,4 +334,83 @@ small {
     color: gray;
     padding: 30px;
     text-align: left;
+}
+
+
+/* Screens > 1024 */
+
+@media (min-width: 1024px) {
+    header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sign-up {
+        width: 60%;
+    }
+
+    .header-img {
+        width: 40%;
+    }
+
+    .trusted-companies {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .slack-statistics {
+        width: 100%;
+    }
+
+    .slack-statistics p {
+        margin-bottom: 20px;
+    }
+
+    .slack-statistics div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #enterprise-button {
+        width: 40%;
+    }
+
+    #sales-button {
+        width: 30%;
+    }
+
+    .slack-statistics ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .slack-statistics ul p {
+        margin: 0;
+        padding: 0;
+        width: 40%;
+    }
+
+    .get-started {
+        padding: 50px;
+    }
+
+    .page-links {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #fine-print {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .social-media-icons {
+        width:  50%;
+        padding-left: 0;
+    }
 }
